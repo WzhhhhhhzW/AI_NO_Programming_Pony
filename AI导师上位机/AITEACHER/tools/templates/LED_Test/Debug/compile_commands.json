@@ -1,0 +1,132 @@
+[
+  {
+    "directory": "D:/workspace/led1",
+    "command": "arm-none-eabi-gcc -mcpu\u003dcortex-m33 -mthumb -mfloat-abi\u003dhard -mfpu\u003dfpv5-sp-d16 -O2 -fmessage-length\u003d0 -fsigned-char -ffunction-sections -fdata-sections -fno-strict-aliasing -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g -D_RENESAS_RA_ -D_RA_CORE\u003dCM33 -D_RA_ORDINAL\u003d1 -I\"D:/workspace/led1/src\" -I\".\" -I\"D:/workspace/led1/ra/fsp/inc\" -I\"D:/workspace/led1/ra/fsp/inc/api\" -I\"D:/workspace/led1/ra/fsp/inc/instances\" -I\"D:/workspace/led1/ra/arm/CMSIS_6/CMSIS/Core/Include\" -I\"D:/workspace/led1/ra_gen\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg/bsp\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg\" -std\u003dc99 -Wno-stringop-overflow -Wno-format-truncation --param\u003dmin-pagesize\u003d0 -c -o \"D:/workspace/led1/Debug/ra/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o\" -x c \"D:/workspace/led1/ra/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.c\"",
+    "file": "D:/workspace/led1/ra/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.c"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "arm-none-eabi-gcc -mcpu\u003dcortex-m33 -mthumb -mfloat-abi\u003dhard -mfpu\u003dfpv5-sp-d16 -O2 -fmessage-length\u003d0 -fsigned-char -ffunction-sections -fdata-sections -fno-strict-aliasing -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g -D_RENESAS_RA_ -D_RA_CORE\u003dCM33 -D_RA_ORDINAL\u003d1 -I\"D:/workspace/led1/src\" -I\".\" -I\"D:/workspace/led1/ra/fsp/inc\" -I\"D:/workspace/led1/ra/fsp/inc/api\" -I\"D:/workspace/led1/ra/fsp/inc/instances\" -I\"D:/workspace/led1/ra/arm/CMSIS_6/CMSIS/Core/Include\" -I\"D:/workspace/led1/ra_gen\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg/bsp\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg\" -std\u003dc99 -Wno-stringop-overflow -Wno-format-truncation --param\u003dmin-pagesize\u003d0 -c -o \"D:/workspace/led1/Debug/ra/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o\" -x c \"D:/workspace/led1/ra/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.c\"",
+    "file": "D:/workspace/led1/ra/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.c"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "arm-none-eabi-gcc -mcpu\u003dcortex-m33 -mthumb -mfloat-abi\u003dhard -mfpu\u003dfpv5-sp-d16 -O2 -fmessage-length\u003d0 -fsigned-char -ffunction-sections -fdata-sections -fno-strict-aliasing -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g -D_RENESAS_RA_ -D_RA_CORE\u003dCM33 -D_RA_ORDINAL\u003d1 -I\"D:/workspace/led1/src\" -I\".\" -I\"D:/workspace/led1/ra/fsp/inc\" -I\"D:/workspace/led1/ra/fsp/inc/api\" -I\"D:/workspace/led1/ra/fsp/inc/instances\" -I\"D:/workspace/led1/ra/arm/CMSIS_6/CMSIS/Core/Include\" -I\"D:/workspace/led1/ra_gen\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg/bsp\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg\" -std\u003dc99 -Wno-stringop-overflow -Wno-format-truncation --param\u003dmin-pagesize\u003d0 -c -o \"D:/workspace/led1/Debug/ra/fsp/src/bsp/mcu/all/bsp_clocks.o\" -x c \"D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_clocks.c\"",
+    "file": "D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_clocks.c"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "arm-none-eabi-gcc -mcpu\u003dcortex-m33 -mthumb -mfloat-abi\u003dhard -mfpu\u003dfpv5-sp-d16 -O2 -fmessage-length\u003d0 -fsigned-char -ffunction-sections -fdata-sections -fno-strict-aliasing -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g -D_RENESAS_RA_ -D_RA_CORE\u003dCM33 -D_RA_ORDINAL\u003d1 -I\"D:/workspace/led1/src\" -I\".\" -I\"D:/workspace/led1/ra/fsp/inc\" -I\"D:/workspace/led1/ra/fsp/inc/api\" -I\"D:/workspace/led1/ra/fsp/inc/instances\" -I\"D:/workspace/led1/ra/arm/CMSIS_6/CMSIS/Core/Include\" -I\"D:/workspace/led1/ra_gen\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg/bsp\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg\" -std\u003dc99 -Wno-stringop-overflow -Wno-format-truncation --param\u003dmin-pagesize\u003d0 -c -o \"D:/workspace/led1/Debug/ra/fsp/src/bsp/mcu/all/bsp_common.o\" -x c \"D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_common.c\"",
+    "file": "D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_common.c"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "arm-none-eabi-gcc -mcpu\u003dcortex-m33 -mthumb -mfloat-abi\u003dhard -mfpu\u003dfpv5-sp-d16 -O2 -fmessage-length\u003d0 -fsigned-char -ffunction-sections -fdata-sections -fno-strict-aliasing -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g -D_RENESAS_RA_ -D_RA_CORE\u003dCM33 -D_RA_ORDINAL\u003d1 -I\"D:/workspace/led1/src\" -I\".\" -I\"D:/workspace/led1/ra/fsp/inc\" -I\"D:/workspace/led1/ra/fsp/inc/api\" -I\"D:/workspace/led1/ra/fsp/inc/instances\" -I\"D:/workspace/led1/ra/arm/CMSIS_6/CMSIS/Core/Include\" -I\"D:/workspace/led1/ra_gen\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg/bsp\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg\" -std\u003dc99 -Wno-stringop-overflow -Wno-format-truncation --param\u003dmin-pagesize\u003d0 -c -o \"D:/workspace/led1/Debug/ra/fsp/src/bsp/mcu/all/bsp_delay.o\" -x c \"D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_delay.c\"",
+    "file": "D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_delay.c"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "arm-none-eabi-gcc -mcpu\u003dcortex-m33 -mthumb -mfloat-abi\u003dhard -mfpu\u003dfpv5-sp-d16 -O2 -fmessage-length\u003d0 -fsigned-char -ffunction-sections -fdata-sections -fno-strict-aliasing -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g -D_RENESAS_RA_ -D_RA_CORE\u003dCM33 -D_RA_ORDINAL\u003d1 -I\"D:/workspace/led1/src\" -I\".\" -I\"D:/workspace/led1/ra/fsp/inc\" -I\"D:/workspace/led1/ra/fsp/inc/api\" -I\"D:/workspace/led1/ra/fsp/inc/instances\" -I\"D:/workspace/led1/ra/arm/CMSIS_6/CMSIS/Core/Include\" -I\"D:/workspace/led1/ra_gen\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg/bsp\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg\" -std\u003dc99 -Wno-stringop-overflow -Wno-format-truncation --param\u003dmin-pagesize\u003d0 -c -o \"D:/workspace/led1/Debug/ra/fsp/src/bsp/mcu/all/bsp_group_irq.o\" -x c \"D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_group_irq.c\"",
+    "file": "D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_group_irq.c"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "arm-none-eabi-gcc -mcpu\u003dcortex-m33 -mthumb -mfloat-abi\u003dhard -mfpu\u003dfpv5-sp-d16 -O2 -fmessage-length\u003d0 -fsigned-char -ffunction-sections -fdata-sections -fno-strict-aliasing -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g -D_RENESAS_RA_ -D_RA_CORE\u003dCM33 -D_RA_ORDINAL\u003d1 -I\"D:/workspace/led1/src\" -I\".\" -I\"D:/workspace/led1/ra/fsp/inc\" -I\"D:/workspace/led1/ra/fsp/inc/api\" -I\"D:/workspace/led1/ra/fsp/inc/instances\" -I\"D:/workspace/led1/ra/arm/CMSIS_6/CMSIS/Core/Include\" -I\"D:/workspace/led1/ra_gen\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg/bsp\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg\" -std\u003dc99 -Wno-stringop-overflow -Wno-format-truncation --param\u003dmin-pagesize\u003d0 -c -o \"D:/workspace/led1/Debug/ra/fsp/src/bsp/mcu/all/bsp_guard.o\" -x c \"D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_guard.c\"",
+    "file": "D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_guard.c"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "arm-none-eabi-gcc -mcpu\u003dcortex-m33 -mthumb -mfloat-abi\u003dhard -mfpu\u003dfpv5-sp-d16 -O2 -fmessage-length\u003d0 -fsigned-char -ffunction-sections -fdata-sections -fno-strict-aliasing -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g -D_RENESAS_RA_ -D_RA_CORE\u003dCM33 -D_RA_ORDINAL\u003d1 -I\"D:/workspace/led1/src\" -I\".\" -I\"D:/workspace/led1/ra/fsp/inc\" -I\"D:/workspace/led1/ra/fsp/inc/api\" -I\"D:/workspace/led1/ra/fsp/inc/instances\" -I\"D:/workspace/led1/ra/arm/CMSIS_6/CMSIS/Core/Include\" -I\"D:/workspace/led1/ra_gen\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg/bsp\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg\" -std\u003dc99 -Wno-stringop-overflow -Wno-format-truncation --param\u003dmin-pagesize\u003d0 -c -o \"D:/workspace/led1/Debug/ra/fsp/src/bsp/mcu/all/bsp_io.o\" -x c \"D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_io.c\"",
+    "file": "D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_io.c"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "arm-none-eabi-gcc -mcpu\u003dcortex-m33 -mthumb -mfloat-abi\u003dhard -mfpu\u003dfpv5-sp-d16 -O2 -fmessage-length\u003d0 -fsigned-char -ffunction-sections -fdata-sections -fno-strict-aliasing -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g -D_RENESAS_RA_ -D_RA_CORE\u003dCM33 -D_RA_ORDINAL\u003d1 -I\"D:/workspace/led1/src\" -I\".\" -I\"D:/workspace/led1/ra/fsp/inc\" -I\"D:/workspace/led1/ra/fsp/inc/api\" -I\"D:/workspace/led1/ra/fsp/inc/instances\" -I\"D:/workspace/led1/ra/arm/CMSIS_6/CMSIS/Core/Include\" -I\"D:/workspace/led1/ra_gen\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg/bsp\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg\" -std\u003dc99 -Wno-stringop-overflow -Wno-format-truncation --param\u003dmin-pagesize\u003d0 -c -o \"D:/workspace/led1/Debug/ra/fsp/src/bsp/mcu/all/bsp_ipc.o\" -x c \"D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_ipc.c\"",
+    "file": "D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_ipc.c"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "arm-none-eabi-gcc -mcpu\u003dcortex-m33 -mthumb -mfloat-abi\u003dhard -mfpu\u003dfpv5-sp-d16 -O2 -fmessage-length\u003d0 -fsigned-char -ffunction-sections -fdata-sections -fno-strict-aliasing -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g -D_RENESAS_RA_ -D_RA_CORE\u003dCM33 -D_RA_ORDINAL\u003d1 -I\"D:/workspace/led1/src\" -I\".\" -I\"D:/workspace/led1/ra/fsp/inc\" -I\"D:/workspace/led1/ra/fsp/inc/api\" -I\"D:/workspace/led1/ra/fsp/inc/instances\" -I\"D:/workspace/led1/ra/arm/CMSIS_6/CMSIS/Core/Include\" -I\"D:/workspace/led1/ra_gen\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg/bsp\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg\" -std\u003dc99 -Wno-stringop-overflow -Wno-format-truncation --param\u003dmin-pagesize\u003d0 -c -o \"D:/workspace/led1/Debug/ra/fsp/src/bsp/mcu/all/bsp_irq.o\" -x c \"D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_irq.c\"",
+    "file": "D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_irq.c"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "arm-none-eabi-gcc -mcpu\u003dcortex-m33 -mthumb -mfloat-abi\u003dhard -mfpu\u003dfpv5-sp-d16 -O2 -fmessage-length\u003d0 -fsigned-char -ffunction-sections -fdata-sections -fno-strict-aliasing -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g -D_RENESAS_RA_ -D_RA_CORE\u003dCM33 -D_RA_ORDINAL\u003d1 -I\"D:/workspace/led1/src\" -I\".\" -I\"D:/workspace/led1/ra/fsp/inc\" -I\"D:/workspace/led1/ra/fsp/inc/api\" -I\"D:/workspace/led1/ra/fsp/inc/instances\" -I\"D:/workspace/led1/ra/arm/CMSIS_6/CMSIS/Core/Include\" -I\"D:/workspace/led1/ra_gen\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg/bsp\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg\" -std\u003dc99 -Wno-stringop-overflow -Wno-format-truncation --param\u003dmin-pagesize\u003d0 -c -o \"D:/workspace/led1/Debug/ra/fsp/src/bsp/mcu/all/bsp_macl.o\" -x c \"D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_macl.c\"",
+    "file": "D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_macl.c"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "arm-none-eabi-gcc -mcpu\u003dcortex-m33 -mthumb -mfloat-abi\u003dhard -mfpu\u003dfpv5-sp-d16 -O2 -fmessage-length\u003d0 -fsigned-char -ffunction-sections -fdata-sections -fno-strict-aliasing -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g -D_RENESAS_RA_ -D_RA_CORE\u003dCM33 -D_RA_ORDINAL\u003d1 -I\"D:/workspace/led1/src\" -I\".\" -I\"D:/workspace/led1/ra/fsp/inc\" -I\"D:/workspace/led1/ra/fsp/inc/api\" -I\"D:/workspace/led1/ra/fsp/inc/instances\" -I\"D:/workspace/led1/ra/arm/CMSIS_6/CMSIS/Core/Include\" -I\"D:/workspace/led1/ra_gen\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg/bsp\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg\" -std\u003dc99 -Wno-stringop-overflow -Wno-format-truncation --param\u003dmin-pagesize\u003d0 -c -o \"D:/workspace/led1/Debug/ra/fsp/src/bsp/mcu/all/bsp_register_protection.o\" -x c \"D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_register_protection.c\"",
+    "file": "D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_register_protection.c"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "arm-none-eabi-gcc -mcpu\u003dcortex-m33 -mthumb -mfloat-abi\u003dhard -mfpu\u003dfpv5-sp-d16 -O2 -fmessage-length\u003d0 -fsigned-char -ffunction-sections -fdata-sections -fno-strict-aliasing -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g -D_RENESAS_RA_ -D_RA_CORE\u003dCM33 -D_RA_ORDINAL\u003d1 -I\"D:/workspace/led1/src\" -I\".\" -I\"D:/workspace/led1/ra/fsp/inc\" -I\"D:/workspace/led1/ra/fsp/inc/api\" -I\"D:/workspace/led1/ra/fsp/inc/instances\" -I\"D:/workspace/led1/ra/arm/CMSIS_6/CMSIS/Core/Include\" -I\"D:/workspace/led1/ra_gen\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg/bsp\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg\" -std\u003dc99 -Wno-stringop-overflow -Wno-format-truncation --param\u003dmin-pagesize\u003d0 -c -o \"D:/workspace/led1/Debug/ra/fsp/src/bsp/mcu/all/bsp_sbrk.o\" -x c \"D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_sbrk.c\"",
+    "file": "D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_sbrk.c"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "arm-none-eabi-gcc -mcpu\u003dcortex-m33 -mthumb -mfloat-abi\u003dhard -mfpu\u003dfpv5-sp-d16 -O2 -fmessage-length\u003d0 -fsigned-char -ffunction-sections -fdata-sections -fno-strict-aliasing -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g -D_RENESAS_RA_ -D_RA_CORE\u003dCM33 -D_RA_ORDINAL\u003d1 -I\"D:/workspace/led1/src\" -I\".\" -I\"D:/workspace/led1/ra/fsp/inc\" -I\"D:/workspace/led1/ra/fsp/inc/api\" -I\"D:/workspace/led1/ra/fsp/inc/instances\" -I\"D:/workspace/led1/ra/arm/CMSIS_6/CMSIS/Core/Include\" -I\"D:/workspace/led1/ra_gen\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg/bsp\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg\" -std\u003dc99 -Wno-stringop-overflow -Wno-format-truncation --param\u003dmin-pagesize\u003d0 -c -o \"D:/workspace/led1/Debug/ra/fsp/src/bsp/mcu/all/bsp_sdram.o\" -x c \"D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_sdram.c\"",
+    "file": "D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_sdram.c"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "arm-none-eabi-gcc -mcpu\u003dcortex-m33 -mthumb -mfloat-abi\u003dhard -mfpu\u003dfpv5-sp-d16 -O2 -fmessage-length\u003d0 -fsigned-char -ffunction-sections -fdata-sections -fno-strict-aliasing -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g -D_RENESAS_RA_ -D_RA_CORE\u003dCM33 -D_RA_ORDINAL\u003d1 -I\"D:/workspace/led1/src\" -I\".\" -I\"D:/workspace/led1/ra/fsp/inc\" -I\"D:/workspace/led1/ra/fsp/inc/api\" -I\"D:/workspace/led1/ra/fsp/inc/instances\" -I\"D:/workspace/led1/ra/arm/CMSIS_6/CMSIS/Core/Include\" -I\"D:/workspace/led1/ra_gen\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg/bsp\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg\" -std\u003dc99 -Wno-stringop-overflow -Wno-format-truncation --param\u003dmin-pagesize\u003d0 -c -o \"D:/workspace/led1/Debug/ra/fsp/src/bsp/mcu/all/bsp_security.o\" -x c \"D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_security.c\"",
+    "file": "D:/workspace/led1/ra/fsp/src/bsp/mcu/all/bsp_security.c"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "arm-none-eabi-gcc -mcpu\u003dcortex-m33 -mthumb -mfloat-abi\u003dhard -mfpu\u003dfpv5-sp-d16 -O2 -fmessage-length\u003d0 -fsigned-char -ffunction-sections -fdata-sections -fno-strict-aliasing -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g -D_RENESAS_RA_ -D_RA_CORE\u003dCM33 -D_RA_ORDINAL\u003d1 -I\"D:/workspace/led1/src\" -I\".\" -I\"D:/workspace/led1/ra/fsp/inc\" -I\"D:/workspace/led1/ra/fsp/inc/api\" -I\"D:/workspace/led1/ra/fsp/inc/instances\" -I\"D:/workspace/led1/ra/arm/CMSIS_6/CMSIS/Core/Include\" -I\"D:/workspace/led1/ra_gen\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg/bsp\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg\" -std\u003dc99 -Wno-stringop-overflow -Wno-format-truncation --param\u003dmin-pagesize\u003d0 -c -o \"D:/workspace/led1/Debug/ra/fsp/src/bsp/mcu/ra4m2/bsp_linker.o\" -x c \"D:/workspace/led1/ra/fsp/src/bsp/mcu/ra4m2/bsp_linker.c\"",
+    "file": "D:/workspace/led1/ra/fsp/src/bsp/mcu/ra4m2/bsp_linker.c"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "arm-none-eabi-gcc -mcpu\u003dcortex-m33 -mthumb -mfloat-abi\u003dhard -mfpu\u003dfpv5-sp-d16 -O2 -fmessage-length\u003d0 -fsigned-char -ffunction-sections -fdata-sections -fno-strict-aliasing -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g -D_RENESAS_RA_ -D_RA_CORE\u003dCM33 -D_RA_ORDINAL\u003d1 -I\"D:/workspace/led1/src\" -I\".\" -I\"D:/workspace/led1/ra/fsp/inc\" -I\"D:/workspace/led1/ra/fsp/inc/api\" -I\"D:/workspace/led1/ra/fsp/inc/instances\" -I\"D:/workspace/led1/ra/arm/CMSIS_6/CMSIS/Core/Include\" -I\"D:/workspace/led1/ra_gen\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg/bsp\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg\" -std\u003dc99 -Wno-stringop-overflow -Wno-format-truncation --param\u003dmin-pagesize\u003d0 -c -o \"D:/workspace/led1/Debug/ra/fsp/src/r_ioport/r_ioport.o\" -x c \"D:/workspace/led1/ra/fsp/src/r_ioport/r_ioport.c\"",
+    "file": "D:/workspace/led1/ra/fsp/src/r_ioport/r_ioport.c"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "arm-none-eabi-gcc -mcpu\u003dcortex-m33 -mthumb -mfloat-abi\u003dhard -mfpu\u003dfpv5-sp-d16 -O2 -fmessage-length\u003d0 -fsigned-char -ffunction-sections -fdata-sections -fno-strict-aliasing -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g -D_RENESAS_RA_ -D_RA_CORE\u003dCM33 -D_RA_ORDINAL\u003d1 -I\"D:/workspace/led1/src\" -I\".\" -I\"D:/workspace/led1/ra/fsp/inc\" -I\"D:/workspace/led1/ra/fsp/inc/api\" -I\"D:/workspace/led1/ra/fsp/inc/instances\" -I\"D:/workspace/led1/ra/arm/CMSIS_6/CMSIS/Core/Include\" -I\"D:/workspace/led1/ra_gen\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg/bsp\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg\" -std\u003dc99 -Wno-stringop-overflow -Wno-format-truncation --param\u003dmin-pagesize\u003d0 -c -o \"D:/workspace/led1/Debug/ra_gen/common_data.o\" -x c \"D:/workspace/led1/ra_gen/common_data.c\"",
+    "file": "D:/workspace/led1/ra_gen/common_data.c"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "arm-none-eabi-gcc -mcpu\u003dcortex-m33 -mthumb -mfloat-abi\u003dhard -mfpu\u003dfpv5-sp-d16 -O2 -fmessage-length\u003d0 -fsigned-char -ffunction-sections -fdata-sections -fno-strict-aliasing -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g -D_RENESAS_RA_ -D_RA_CORE\u003dCM33 -D_RA_ORDINAL\u003d1 -I\"D:/workspace/led1/src\" -I\".\" -I\"D:/workspace/led1/ra/fsp/inc\" -I\"D:/workspace/led1/ra/fsp/inc/api\" -I\"D:/workspace/led1/ra/fsp/inc/instances\" -I\"D:/workspace/led1/ra/arm/CMSIS_6/CMSIS/Core/Include\" -I\"D:/workspace/led1/ra_gen\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg/bsp\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg\" -std\u003dc99 -Wno-stringop-overflow -Wno-format-truncation --param\u003dmin-pagesize\u003d0 -c -o \"D:/workspace/led1/Debug/ra_gen/hal_data.o\" -x c \"D:/workspace/led1/ra_gen/hal_data.c\"",
+    "file": "D:/workspace/led1/ra_gen/hal_data.c"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "arm-none-eabi-gcc -mcpu\u003dcortex-m33 -mthumb -mfloat-abi\u003dhard -mfpu\u003dfpv5-sp-d16 -O2 -fmessage-length\u003d0 -fsigned-char -ffunction-sections -fdata-sections -fno-strict-aliasing -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g -D_RENESAS_RA_ -D_RA_CORE\u003dCM33 -D_RA_ORDINAL\u003d1 -I\"D:/workspace/led1/src\" -I\".\" -I\"D:/workspace/led1/ra/fsp/inc\" -I\"D:/workspace/led1/ra/fsp/inc/api\" -I\"D:/workspace/led1/ra/fsp/inc/instances\" -I\"D:/workspace/led1/ra/arm/CMSIS_6/CMSIS/Core/Include\" -I\"D:/workspace/led1/ra_gen\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg/bsp\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg\" -std\u003dc99 -Wno-stringop-overflow -Wno-format-truncation --param\u003dmin-pagesize\u003d0 -c -o \"D:/workspace/led1/Debug/ra_gen/main.o\" -x c \"D:/workspace/led1/ra_gen/main.c\"",
+    "file": "D:/workspace/led1/ra_gen/main.c"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "arm-none-eabi-gcc -mcpu\u003dcortex-m33 -mthumb -mfloat-abi\u003dhard -mfpu\u003dfpv5-sp-d16 -O2 -fmessage-length\u003d0 -fsigned-char -ffunction-sections -fdata-sections -fno-strict-aliasing -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g -D_RENESAS_RA_ -D_RA_CORE\u003dCM33 -D_RA_ORDINAL\u003d1 -I\"D:/workspace/led1/src\" -I\".\" -I\"D:/workspace/led1/ra/fsp/inc\" -I\"D:/workspace/led1/ra/fsp/inc/api\" -I\"D:/workspace/led1/ra/fsp/inc/instances\" -I\"D:/workspace/led1/ra/arm/CMSIS_6/CMSIS/Core/Include\" -I\"D:/workspace/led1/ra_gen\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg/bsp\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg\" -std\u003dc99 -Wno-stringop-overflow -Wno-format-truncation --param\u003dmin-pagesize\u003d0 -c -o \"D:/workspace/led1/Debug/ra_gen/pin_data.o\" -x c \"D:/workspace/led1/ra_gen/pin_data.c\"",
+    "file": "D:/workspace/led1/ra_gen/pin_data.c"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "arm-none-eabi-gcc -mcpu\u003dcortex-m33 -mthumb -mfloat-abi\u003dhard -mfpu\u003dfpv5-sp-d16 -O2 -fmessage-length\u003d0 -fsigned-char -ffunction-sections -fdata-sections -fno-strict-aliasing -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g -D_RENESAS_RA_ -D_RA_CORE\u003dCM33 -D_RA_ORDINAL\u003d1 -I\"D:/workspace/led1/src\" -I\".\" -I\"D:/workspace/led1/ra/fsp/inc\" -I\"D:/workspace/led1/ra/fsp/inc/api\" -I\"D:/workspace/led1/ra/fsp/inc/instances\" -I\"D:/workspace/led1/ra/arm/CMSIS_6/CMSIS/Core/Include\" -I\"D:/workspace/led1/ra_gen\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg/bsp\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg\" -std\u003dc99 -Wno-stringop-overflow -Wno-format-truncation --param\u003dmin-pagesize\u003d0 -c -o \"D:/workspace/led1/Debug/ra_gen/vector_data.o\" -x c \"D:/workspace/led1/ra_gen/vector_data.c\"",
+    "file": "D:/workspace/led1/ra_gen/vector_data.c"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "arm-none-eabi-gcc -mcpu\u003dcortex-m33 -mthumb -mfloat-abi\u003dhard -mfpu\u003dfpv5-sp-d16 -O2 -fmessage-length\u003d0 -fsigned-char -ffunction-sections -fdata-sections -fno-strict-aliasing -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g -D_RENESAS_RA_ -D_RA_CORE\u003dCM33 -D_RA_ORDINAL\u003d1 -I\"D:/workspace/led1/src\" -I\".\" -I\"D:/workspace/led1/ra/fsp/inc\" -I\"D:/workspace/led1/ra/fsp/inc/api\" -I\"D:/workspace/led1/ra/fsp/inc/instances\" -I\"D:/workspace/led1/ra/arm/CMSIS_6/CMSIS/Core/Include\" -I\"D:/workspace/led1/ra_gen\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg/bsp\" -I\"D:/workspace/led1/ra_cfg/fsp_cfg\" -std\u003dc99 -Wno-stringop-overflow -Wno-format-truncation --param\u003dmin-pagesize\u003d0 -c -o \"D:/workspace/led1/Debug/src/hal_entry.o\" -x c \"D:/workspace/led1/src/hal_entry.c\"",
+    "file": "D:/workspace/led1/src/hal_entry.c"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "clang -I \"${workspace_loc:/${ProjName}}/script\" -I\"D:/workspace/led1/Debug\" -I\"D:\\workspace\\led1\\Debug\" -ferror-limit\u003d30",
+    "file": "D:\\workspace\\led1\\Debug\\fsp_gen.ld"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "clang -I \"${workspace_loc:/${ProjName}}/script\" -I\"D:/workspace/led1/Debug\" -I\"D:\\workspace\\led1\\Debug\" -ferror-limit\u003d30",
+    "file": "D:\\workspace\\led1\\Debug\\memory_regions.ld"
+  },
+  {
+    "directory": "D:/workspace/led1",
+    "command": "clang -I \"${workspace_loc:/${ProjName}}/script\" -I\"D:/workspace/led1/Debug\" -I\"D:\\workspace\\led1\\script\" -ferror-limit\u003d30",
+    "file": "D:\\workspace\\led1\\script\\fsp.ld"
+  }
+]

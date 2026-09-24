@@ -1,0 +1,8 @@
+claude-agent-sdk==0.2.134
+loguru==0.7.3
+markdown-it-py==4.2.0
+openai==2.53.0
+pygments==2.20.0
+pyqt6==6.11.0
+pyqt6-qscintilla==2.14.1
+pyqt6-webengine==6.11.0
