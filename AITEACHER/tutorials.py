@@ -14,13 +14,23 @@ from PyQt6.QtWidgets import (QDialog, QVBoxLayout, QHBoxLayout, QComboBox, QPush
                              QStackedWidget, QSlider)
 from styles import dialog_stylesheet
 
-TUTORIALS = ('瑞萨入门教程1-9.pdf', '瑞萨入门教程10-19.pdf', '瑞萨入门教程oled.pdf')
+TUTORIALS = (
+    '智能小马安装教程.pdf',
+    '蓝牙小马-AI辅助零编程高级模式教程.pdf',
+    'API的调用.pdf',
+    '瑞萨入门教程1-9.pdf',
+    '瑞萨入门教程10-19.pdf',
+    '瑞萨入门教程oled.pdf',
+)
 
 
 RESOURCES = [
-    {'title':'瑞萨入门教程 1–9','kind':'pdf','path':TUTORIALS[0]},
-    {'title':'瑞萨入门教程 10–19','kind':'pdf','path':TUTORIALS[1]},
-    {'title':'OLED 专题教程','kind':'pdf','path':TUTORIALS[2]},
+    {'title':'智能小马硬件安装教程','kind':'pdf','path':TUTORIALS[0]},
+    {'title':'AI 辅助零编程 · 高级模式教程','kind':'pdf','path':TUTORIALS[1]},
+    {'title':'AI 时代第一课 · API 的调用','kind':'pdf','path':TUTORIALS[2]},
+    {'title':'瑞萨入门教程 1–9','kind':'pdf','path':TUTORIALS[3]},
+    {'title':'瑞萨入门教程 10–19','kind':'pdf','path':TUTORIALS[4]},
+    {'title':'OLED 专题教程','kind':'pdf','path':TUTORIALS[5]},
     {'title':'蓝牙串口操作 · 视频','kind':'video','path':'蓝牙串口操作/蓝牙串口操作教程.mp4'},
     {'title':'小马建模与 3D 打印','kind':'pdf','path':'建模与3D打印/蓝牙小马-建模及3D 打印教程 .pdf'},
 ]
@@ -71,7 +81,7 @@ class TutorialVideo(QWidget):
 class TutorialDialog(QDialog):
     def __init__(self, parent=None):
         super().__init__(parent)
-        self.setWindowTitle('进阶教程')
+        self.setWindowTitle('教程资料')
         self.setWindowFlag(Qt.WindowType.WindowMaximizeButtonHint, True)
         self.resize(1080, 800)
         self.positions = {}
@@ -151,9 +161,9 @@ class TutorialDialog(QDialog):
 
     def apply_theme(self, theme):
         spin_style = ('QSpinBox {background:#223347;color:#edf5ff;border:1px solid #496278;'
-                      'border-radius:4px;padding:5px;}' if theme == 'dark' else
+                      'border-radius:4px;padding:5px 32px 5px 7px;min-height:24px;}' if theme == 'dark' else
                       'QSpinBox {background:white;color:#202020;border:1px solid #a0a0a0;'
-                      'border-radius:4px;padding:5px;}')
+                      'border-radius:4px;padding:5px 32px 5px 7px;min-height:24px;}')
         tree_style = ('QTreeView {background:#1e2732;color:#e7eef5;border:1px solid #496278;}'
                       'QTreeView::item:selected {background:#275d78;color:white;}' if theme == 'dark' else
                       'QTreeView {background:white;color:#24374b;border:1px solid #bccbd8;}'

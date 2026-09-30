@@ -1,3 +1,13 @@
+import sys
+from pathlib import Path
+
+
+def _asset_url(name: str) -> str:
+    """Return a QSS-safe path for source and packaged executions."""
+    root = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parent))
+    return (root / "assets" / name).as_posix()
+
+
 LIGHT_STYLESHEET = """
 QMainWindow {
     background-color: #f5f5f7;
@@ -480,6 +490,8 @@ def dialog_stylesheet(theme: str = "dark", accent_button: str = "", accent_all: 
     btn_hover = (f"background-color: {p['accent_hover']};"
                  if accent_all else
                  f"background-color: {p['btn_hover']}; border-color: {p['btn_hover_border']};")
+    spin_up = _asset_url(f"spin_up_{theme}.png")
+    spin_down = _asset_url(f"spin_down_{theme}.png")
     qss = f"""
 QDialog {{ background-color: {p['bg']}; }}
 QLabel {{ color: {p['fg']}; font-size: 13px;
@@ -509,10 +521,33 @@ QCheckBox::indicator:checked {{
 }}
 QPushButton {{
     {btn}
-    border-radius: 4px; padding: 6px 18px; font-weight: bold;
+    border-radius: 4px; padding: 6px 18px; min-height: 24px; font-weight: bold;
 }}
 QPushButton:hover {{ {btn_hover} }}
+QPushButton:pressed {{ background-color: {p['accent']}; color: #ffffff; }}
 QPushButton:disabled {{ color: {p['sub']}; }}
+QAbstractSpinBox {{
+    background-color: {p['field_bg']}; color: {p['field_fg']};
+    border: 1px solid {p['border']}; border-radius: 4px;
+    padding: 4px 32px 4px 7px; min-height: 24px;
+}}
+QAbstractSpinBox::up-button {{
+    subcontrol-origin: border; subcontrol-position: top right;
+    width: 28px; border-left: 1px solid {p['border']};
+    border-bottom: 1px solid {p['border']};
+}}
+QAbstractSpinBox::down-button {{
+    subcontrol-origin: border; subcontrol-position: bottom right;
+    width: 28px; border-left: 1px solid {p['border']};
+}}
+QAbstractSpinBox::up-arrow {{ image: url("{spin_up}"); width: 12px; height: 8px; }}
+QAbstractSpinBox::down-arrow {{ image: url("{spin_down}"); width: 12px; height: 8px; }}
+QAbstractSpinBox::up-button:hover, QAbstractSpinBox::down-button:hover {{
+    background-color: {p['btn_hover']};
+}}
+QAbstractSpinBox::up-button:pressed, QAbstractSpinBox::down-button:pressed {{
+    background-color: {p['accent']};
+}}
 """
     if accent_button:
         qss += (f"QPushButton#{accent_button} {{ background-color: {p['accent']};"

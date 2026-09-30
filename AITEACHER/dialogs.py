@@ -8,7 +8,7 @@ from PyQt6.QtWidgets import (QDialog, QVBoxLayout, QHBoxLayout, QLabel, QTextEdi
                              QComboBox, QFileDialog, QCheckBox, QMessageBox,
                              QSizePolicy, QSlider, QWidget)
 
-from flasher import list_serial_ports
+from flasher import list_serial_port_devices
 from project_manager import list_templates
 
 
@@ -191,9 +191,11 @@ class FlashDialog(QDialog):
         port_row = QHBoxLayout()
         self.combo_port = QComboBox()
         self.combo_port.setEditable(True)
+        self.combo_port.setInsertPolicy(QComboBox.InsertPolicy.NoInsert)
+        self.combo_port.lineEdit().setPlaceholderText("连接设备后点击刷新，或输入 COM 端口")
         self._refresh_ports(cfg.get("port", ""))
         btn_refresh = QPushButton("刷新")
-        btn_refresh.clicked.connect(lambda: self._refresh_ports(self.combo_port.currentText()))
+        btn_refresh.clicked.connect(lambda: self._refresh_ports(self._selected_port()))
         port_row.addWidget(self.combo_port, 1)
         port_row.addWidget(btn_refresh)
         form.addRow("串口:", port_row)
@@ -227,9 +229,25 @@ class FlashDialog(QDialog):
 
     def _refresh_ports(self, current):
         self.combo_port.clear()
-        self.combo_port.addItems(list_serial_ports())
+        for device in list_serial_port_devices():
+            label = f"{device['port']} — {device['description']}"
+            self.combo_port.addItem(label, device["port"])
+            self.combo_port.setItemData(self.combo_port.count() - 1, label, Qt.ItemDataRole.ToolTipRole)
         if current:
-            self.combo_port.setCurrentText(current)
+            index = self.combo_port.findData(current)
+            if index >= 0:
+                self.combo_port.setCurrentIndex(index)
+            else:
+                # 已保存的设备暂未连接时，仍允许保留或手动输入端口。
+                self.combo_port.setEditText(current)
+
+    def _selected_port(self):
+        text = self.combo_port.currentText().strip()
+        index = self.combo_port.findText(text, Qt.MatchFlag.MatchExactly)
+        if index >= 0:
+            return self.combo_port.itemData(index) or text
+        # 编辑框输入后 currentIndex 可能仍指向旧项目，不能直接读 currentData。
+        return text
 
     def _pick_rfp(self):
         fname, _ = QFileDialog.getOpenFileName(self, "选择 rfp-cli", "", "可执行文件 (rfp-cli* *.exe);;All Files (*.*)")
@@ -244,7 +262,7 @@ class FlashDialog(QDialog):
     def get_values(self):
         return {
             "rfp_path": self.edit_rfp.text().strip(),
-            "port": self.combo_port.currentText().strip(),
+            "port": self._selected_port(),
             "hex_path": self.edit_hex.text().strip(),
             "template": self.edit_template.text().strip(),
         }

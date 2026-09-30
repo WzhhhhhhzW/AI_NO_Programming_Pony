@@ -108,7 +108,7 @@ class OledToolDialog(QDialog):
     def apply_theme(self,theme):
         colors=('#23272e','#edf5ff','#465261') if theme=='dark' else ('#ffffff','#202020','#b8c3ce')
         bg,fg,border=colors
-        self.setStyleSheet(dialog_stylesheet(theme,'unused')+f'QSpinBox {{background:{bg};color:{fg};border:1px solid {border};border-radius:4px;padding:4px;}} QSplitter::handle {{background:{border};}}')
+        self.setStyleSheet(dialog_stylesheet(theme,'unused')+f'QSpinBox {{background:{bg};color:{fg};border:1px solid {border};border-radius:4px;padding:4px 32px 4px 7px;min-height:24px;}} QSplitter::handle {{background:{border};}}')
     def load_image(self):
         path,_=QFileDialog.getOpenFileName(self,'选择图片','','图片 (*.png *.jpg *.jpeg *.bmp *.gif *.webp)')
         if not path:return

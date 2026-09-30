@@ -59,7 +59,7 @@ class SerialDialog(QDialog):
         self.apply_theme(getattr(parent,'current_theme','dark'));self.refresh_ports();self.update_connection_ui()
     def apply_theme(self,theme):
         bg,fg,border=('#23272e','#edf5ff','#465261') if theme=='dark' else ('white','#202020','#b8c3ce')
-        self.setStyleSheet(dialog_stylesheet(theme,'unused')+f'QSpinBox {{background:{bg};color:{fg};border:1px solid {border};padding:4px;}}')
+        self.setStyleSheet(dialog_stylesheet(theme,'unused')+f'QSpinBox {{background:{bg};color:{fg};border:1px solid {border};padding:4px 32px 4px 7px;min-height:24px;}}')
     def reset_decoder(self,*_):
         self.decoder=codecs.getincrementaldecoder(self.encoding.currentText().lower())('replace')
     def refresh_ports(self):

@@ -51,7 +51,7 @@ QUICK_COMMANDS = [
 class CoderUI(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Renesas 机器马 AI 导师 V16.18")
+        self.setWindowTitle("Renesas 机器马 AI 导师 V16.21")
         self.tutorial_dialog = None
         self.oled_tool_dialog = None
         self.serial_dialog = None
@@ -196,7 +196,7 @@ class CoderUI(QMainWindow):
         self.btn_flash.setToolTip("通过 rfp-cli 将编译好的 hex 固件烧录到开发板")
         self.btn_simulation = QPushButton("🐎 3D 仿真")
         self.btn_simulation.clicked.connect(self.open_simulation)
-        self.btn_tutorials = QPushButton("📚 进阶教程")
+        self.btn_tutorials = QPushButton("📚 教程资料")
         self.btn_tutorials.clicked.connect(self.open_tutorials)
 
         self.btn_oled_tool = QPushButton("▦ OLED 取模")

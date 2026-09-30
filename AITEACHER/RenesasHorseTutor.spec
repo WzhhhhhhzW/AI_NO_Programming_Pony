@@ -75,7 +75,7 @@ a = Analysis(
     ["main_host_computer.py"],
     pathex=[],
     binaries=sdk_binaries + web_binaries,
-    datas=tool_datas + sdk_datas + web_datas + [("reference_projects/Dog", "reference_projects/Dog"), ("simulator/assets", "simulator/assets"), ("tutorials", "tutorials"), ("assets/app_icon.ico", "assets"), ("assets/app_icon.png", "assets")],
+    datas=tool_datas + sdk_datas + web_datas + [("reference_projects/Dog", "reference_projects/Dog"), ("simulator/assets", "simulator/assets"), ("tutorials", "tutorials"), ("assets/app_icon.ico", "assets"), ("assets/app_icon.png", "assets"), ("assets/spin_up_dark.png", "assets"), ("assets/spin_down_dark.png", "assets"), ("assets/spin_up_light.png", "assets"), ("assets/spin_down_light.png", "assets")],
     hiddenimports=[
         "PyQt6.Qsci",                 # QScintilla，只在 code_editor 里 from ... import
         "PyQt6.QtWebEngineCore",

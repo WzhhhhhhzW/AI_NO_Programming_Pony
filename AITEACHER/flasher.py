@@ -1,11 +1,13 @@
 import glob
 import json
 import os
+import re
 import shlex
 import subprocess
 import sys
 
 from PyQt6.QtCore import QThread, pyqtSignal
+from PyQt6.QtSerialPort import QSerialPortInfo
 
 from config import _CONFIG_DIR
 
@@ -104,7 +106,8 @@ def find_rfp_cli():
     return ""
 
 
-def list_serial_ports():
+def _fallback_serial_ports():
+    """只枚举系统实际记录的串口，不生成未连接的 COM 端口。"""
     ports = []
     if os.name == "nt":
         try:
@@ -120,11 +123,41 @@ def list_serial_ports():
             winreg.CloseKey(key)
         except OSError:
             pass
-        if not ports:
-            ports = [f"COM{n}" for n in range(1, 10)]
     else:
         ports = sorted(glob.glob("/dev/cu.*") + glob.glob("/dev/ttyUSB*") + glob.glob("/dev/ttyACM*"))
     return ports
+
+
+def _port_sort_key(port):
+    match = re.fullmatch(r"COM(\d+)", port, re.IGNORECASE)
+    return ("com", int(match.group(1))) if match else (port.casefold(), 0)
+
+
+def list_serial_port_devices():
+    """返回原始端口及系统提供的设备名称，供界面显示。"""
+    devices = {}
+    try:
+        for info in QSerialPortInfo.availablePorts():
+            port = info.portName() if os.name == "nt" else info.systemLocation()
+            port = port.strip()
+            if not port:
+                continue
+            description = info.description().strip() or info.manufacturer().strip()
+            # Windows 的友好名称有时自带 (COM3)，界面会单独显示端口。
+            description = re.sub(r"\s*\(" + re.escape(port) + r"\)\s*$", "", description,
+                                 flags=re.IGNORECASE).strip()
+            devices[port] = {"port": port, "description": description or "串口设备（名称未知）"}
+    except (OSError, RuntimeError):
+        pass
+    if not devices:
+        for port in _fallback_serial_ports():
+            devices[port] = {"port": port, "description": "串口设备（名称未知）"}
+    return [devices[port] for port in sorted(devices, key=_port_sort_key)]
+
+
+def list_serial_ports():
+    """保留仅返回原始端口名的接口，烧录命令不使用设备说明。"""
+    return [device["port"] for device in list_serial_port_devices()]
 
 
 def build_flash_command(template, rfp_path, port, hex_path):

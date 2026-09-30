@@ -28,7 +28,7 @@ AI 需要网络和你配置的 API。教程、取模与仿真可离线使用。�
 - **界面引导**：这份使用手册，支持目录和关键词搜索。
 - **打开工程 / 保存代码**：选择工程、保存编辑。
 - **新建工程 / RASC配置**：创建教学工程，配置芯片外设。
-- **3D 仿真 / 进阶教程 / OLED 取模 / 串口调试**：动作预览、资料学习、图像数据制作和真实设备通信。
+- **3D 仿真 / 教程资料 / OLED 取模 / 串口调试**：动作预览、资料学习、图像数据制作和真实设备通信。
 - **一键编译 / 一键烧录**：生成固件并下载到开发板。
 - **阶段 / API 设置 / 亮色或暗色模式**：选择学习方式、配置 AI、切换外观。
 
@@ -127,11 +127,14 @@ AI 生成后仍应检查仿真、编译和实物效果；成功回复不等于�
 高级模式主要提供参考与解释，由你完成工程编辑。代码指引以课程的 Dog 实例工程为参考；参考工程包含更多完整功能，不代表你的入门工程已实现这些动作。
 代码指引中的内容不会因显示出来就自动写入学生工程。
 '''),
-('知识详解与进阶教程', '''### 知识详解
+('知识详解与教程资料', '''### 知识详解
 在高级模式切到要学习的课程，点击 **知识详解**。弹窗解释当前步骤相关概念；AI 讲解需要有效 API 和网络。若加载报错，核对 API 设置和错误信息。
 
-### 进阶教程
-点击顶部 **进阶教程**，在下拉框选择：
+### 教程资料
+点击顶部 **教程资料**，在下拉框选择：
+- 智能小马硬件安装教程。
+- AI 辅助零编程高级模式教程。
+- AI 时代第一课：API 的调用。
 - 瑞萨入门教程 1–9。
 - 瑞萨入门教程 10–19。
 - OLED 专题教程。
@@ -342,10 +345,6 @@ class InterfaceGuide(QDialog):
         heading.addWidget(subtitle)
         hero_layout.addLayout(heading, 1)
 
-        badge = QLabel('● 离线可用  ·  16 节')
-        badge.setObjectName('guideOfflineBadge')
-        badge.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        hero_layout.addWidget(badge)
         root.addWidget(hero)
 
         split = QSplitter(Qt.Orientation.Horizontal)
@@ -486,10 +485,6 @@ class InterfaceGuide(QDialog):
             QLabel#guideHeroTitle {{ color: {p['text']}; font-size: 22px; font-weight: 700; }}
             QLabel#guideHeroSubtitle, QLabel#guideSidebarTip, QLabel#guideResultCount {{
                 color: {p['muted']}; font-weight: 400;
-            }}
-            QLabel#guideOfflineBadge {{
-                color: {p['accent']}; background: {p['soft']}; border-radius: 14px;
-                padding: 7px 12px; font-weight: 600;
             }}
             QLabel#guideSectionTitle {{ color: {p['text']}; font-size: 17px; font-weight: 700; }}
             QLineEdit#guideSearch, QComboBox#guideCategory {{
